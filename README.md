@@ -36,7 +36,18 @@ The program made primarily in Javascript and tested with TDD, takes a number as 
 
 ## Specs
 
+Description: mrRogerizer()
 
+test: Should accept user input and convert it to a number.
+code: let input = parseInt($("formInput").val());
+expect: user types "5", should return 5.
+
+test: Should take input and return array of numbers 0 - input.
+code: let n = 5;
+const empty = []
+for (let i = 0; i < n+1; i++) {
+    empty.push(i);
+expect: input 5, console.log(o,1,2,3,4,5). stop. 
 
 ## Known Bugs
 *  
