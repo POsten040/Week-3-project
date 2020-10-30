@@ -36,7 +36,7 @@ The program made primarily in Javascript and tested with TDD, takes a number as 
 
 ## Specs
 
-Description: stringMaker()
+Description: mrRogerizer()
 
 test: Should accept user input and convert it to a number.
 code: let input = parseInt($("formInput").val());
@@ -47,28 +47,31 @@ code: let n = 5;
 const empty = []
 for (let i = 0; i < n+1; i++) {
     empty.push(i);}
-expect: input 5, console.log(0,1,2,3,4,5). stop. 
+expect: input (5), console.log(0,1,2,3,4,5). stop. 
 
 test: return array as a string of numbers
 code: array.join(" ")
-expect:  arraymaker(5) returns "0 1 2 3 4 5"
+expect:  mrRogerizer(5) returns "0 1 2 3 4 5"
 
-Description: mrRogerizer()
+test: replace 3 with "wont you be my neighbor"
+code: string.replace(/3/g, "won't you be my neighbor");
+expect: input [1,2,3,4] returns [1,2,"wont you be my neighbor",4]
 
-test: replace index[3] of array with "wont you be my neighbor
-code: array.splice(3, 1, "wont you be my neighbor");
-}
-expect: mrRogerizer(5) to output [0, 1, 2, "wont you be my neighbor", 4, 5]
+test: replace 2 with "boop"
+code: string.replace(/2/g, "boop");
+Expect: input [1,2,3,4] returns [1,"boop",3,4,]
 
-test: replace index[2] of array with "boop"
-code: array.splice(2, 1, "boop");
-}
-expect: mrRogerizer(5) to output [0, 1, "boop", "wont you be my neighbor", 4, 5]
+test: replace 1 with "beep"
+code: string.replace(/1/g, "beep");
+Expect: input [1,2,3,4] returns ["beep",2,3,4]
 
-test: replace index[1] of array with "beep"
-code: array.splice(1, 1, "beep");
-}
-expect: mrRogerizer(5) to output [0, "beep", "boop", "wont you be my neighbor", 4, 5]
+test: create rule where, if numbers are grouped (ie: 13, 11, 24) replace both numbers with appropriate string.
+code:
+Expect: input [13] returns ["Wont you be my neighbor"] 
+
+
+
+
 
 ## Known Bugs
 *  
