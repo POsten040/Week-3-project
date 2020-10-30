@@ -36,7 +36,7 @@ The program made primarily in Javascript and tested with TDD, takes a number as 
 
 ## Specs
 
-Description: mrRogerizer()
+Description: arrayMaker()
 
 test: Should accept user input and convert it to a number.
 code: let input = parseInt($("formInput").val());
@@ -46,12 +46,24 @@ test: Should take input and return array of numbers 0 - input.
 code: let n = 5;
 const empty = []
 for (let i = 0; i < n+1; i++) {
-    let inputArray = empty.push(i);
+    empty.push(i);}
 expect: input 5, console.log(0,1,2,3,4,5). stop. 
 
 test: replace 3 in an array with "wont you be my neighbor?".
 code: inputArray.splice(3, 1, "won't you be my neighbor");
 expect: input = [1,2,3,4,5], return(0,1,2,"won't you be my neighbor?",4,5)
+
+Description: mrRogerizer()
+
+test: replace index[3] of array with "wont you be my neighbor
+code: array.splice(3, 1, "wont you be my neighbor");
+}
+expect: mrRogerizer(5) to output [0, 1, 2, "wont you be my neighbor", 4, 5]
+
+test: replace index[2] of array with "wont you be my neighbor
+code: array.splice(3, 1, "wont you be my neighbor");
+}
+expect: mrRogerizer(5) to output [0, 1, 2, "wont you be my neighbor", 4, 5]
 
 ## Known Bugs
 *  
