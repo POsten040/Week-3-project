@@ -69,6 +69,9 @@ test: create rule where, if numbers are grouped (ie: 13, 11, 24) replace both nu
 code:
 Expect: input [13] returns ["Wont you be my neighbor"] 
 
+test: change regular expressions to single out 1, 2, 3 and change only them
+code:
+expect: input "1, 13, 3" returns "beep", 13, "wont you be my neighbor"
 
 
 

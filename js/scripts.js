@@ -23,10 +23,16 @@ function mrRogerizer(n) {
   for (let i = 0; i < n+1; i++) {
     empty.push(i);}
   const string = empty.join(" ");
-  let neighborString = string.replace(/3/g, "won't you be my neighbor");
-  let boopString = neighborString.replace(/2/g, "boop");
-  let beepString = boopString.replace(/1/g, "beep");
-  return beepString;
+  let neighborString = string.replace(/\D3\D/g, " won't you be my neighbor ");
+  let boopString = neighborString.replace(/\D2\D/g, " boop ");
+  let beepString = boopString.replace(/\D1\D/g, " beep ");
+  let threeString = beepString.replace(/\d3/g, " wont you be my neighbor ");
+  let thirtyString = threeString.replace(/3\d/g, " wont you be my neighbor ");
+  let twoString = thirtyString.replace(/\d2/g, " boop ");
+  let twentyString = twoString.replace(/2\d/g, " boop ");
+  let oneString = twentyString.replace(/\d1/g, " beep ");
+  let tenString = oneString.replace(/1\d/g, " beep ");
+  return tenString;
 }
   
 // NON FUNCTIONING ATTEMPTS
