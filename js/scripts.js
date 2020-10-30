@@ -50,22 +50,12 @@ function mrRogerizer(n) {
 
 // UI Logic
 
-// $(document).ready(function() {
-//   $("#formOne").submit(function(event) {
-//     let input = parseInt($("#userInput").val());
-//     let rogerizedInput = mrRogerizer(input);
-//     $("#results").append(rogerizedInput);
-//     event.preventDefault();
-//     })
-//     $("#userInput").text("");
-//     console.log("submitted");
-//   });
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     let input = parseInt($("#userInput").val());
     let rogerizedInput = mrRogerizer(input);
-    $("#results").append(rogerizedInput);
+    $("#results").text(rogerizedInput);
     event.preventDefault();
-  });
-
+    $("#userInput").val("");
+  });  
 });
