@@ -46,8 +46,12 @@ test: Should take input and return array of numbers 0 - input.
 code: let n = 5;
 const empty = []
 for (let i = 0; i < n+1; i++) {
-    empty.push(i);
-expect: input 5, console.log(o,1,2,3,4,5). stop. 
+    let inputArray = empty.push(i);
+expect: input 5, console.log(0,1,2,3,4,5). stop. 
+
+test: replace 3 in an array with "wont you be my neighbor?".
+code: inputArray.splice(3, 1, "won't you be my neighbor");
+expect: input = [1,2,3,4,5], return(0,1,2,"won't you be my neighbor?",4,5)
 
 ## Known Bugs
 *  
