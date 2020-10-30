@@ -9,8 +9,20 @@
 </head>
 <body>
   <form id="formOne">
-    <label for="userInput">What number should <em>beloved</em> childrens advocate, tv personality, and all around humanitarian Mr. Rogers count up to for you today neighbor?</label>
+    <div class="box">
+      <label id="label" for="userInput">What number should <em>beloved</em> childrens advocate, tv personality, and all around humanitarian Mr. Rogers count up to for you today neighbor?</label>
+    </div>
     <input class="form-control" type="number" id="userInput" onfocus="this.value=''" required>
     <button class="submit" id="send">Say hello Neighbor</button>
-<div><p id="results"></p></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <img src="img/fredrogers.webp">
+      </div>
+      <div class="col-6" id="bubble">
+        <img src="img/bubble.png">
+        <div><p class="centered" id="results"></p></div>
+      </div>
+    </div>
+  </div>
 </body>

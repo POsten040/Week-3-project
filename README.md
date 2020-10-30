@@ -77,7 +77,7 @@ expect: input "1, 13, 3" returns "beep", 13, "wont you be my neighbor"
 
 
 ## Known Bugs
-*  
+*  numbers with triple digits are not compatible with the function mrRogerizer, they return fractured numbers and phrases. ex: 101 return "1 beep", instead of "beep".
 
 ## Support and contact details
 
