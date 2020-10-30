@@ -16,15 +16,23 @@ let n = parseInt($("#userInput").val());
 // }
 
 
+// This returns string "0-n", but returns "13" as "1wont you be my neighbor" instead of "wont you be my neighbor"
 
-function arrayMaker(n) {
+// function stringMaker(n) {
+//   const empty = []
+//   for (let i = 0; i < n+1; i++) {
+//     empty.push(i);}
+//   const string = empty.join(" ");
+//   let replacedString = string.replace(/3/g, "won't you be my neighbor");
+//   return replacedString;
+// }
+  
+function stringMaker(n) {
   const empty = []
   for (let i = 0; i < n+1; i++) {
     empty.push(i);}
-  const string = empty.join(" ");
-  return string;
+  return empty;
 }
-  
 
 function mrRogerizer(array) {
   array.splice(3, 1, "wont you be my neighbor");
@@ -37,6 +45,7 @@ function mrRogerizer(array) {
 // UI Logic
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
-    (mrRogerizer(n));
+    let input = parseInt($("#userInput").val());
     });
-  };
+  });
+

@@ -36,7 +36,7 @@ The program made primarily in Javascript and tested with TDD, takes a number as 
 
 ## Specs
 
-Description: arrayMaker()
+Description: stringMaker()
 
 test: Should accept user input and convert it to a number.
 code: let input = parseInt($("formInput").val());
@@ -49,9 +49,9 @@ for (let i = 0; i < n+1; i++) {
     empty.push(i);}
 expect: input 5, console.log(0,1,2,3,4,5). stop. 
 
-test: replace 3 in an array with "wont you be my neighbor?".
-code: inputArray.splice(3, 1, "won't you be my neighbor");
-expect: input = [1,2,3,4,5], return(0,1,2,"won't you be my neighbor?",4,5)
+test: return array as a string of numbers
+code: array.join(" ")
+expect:  arraymaker(5) returns "0 1 2 3 4 5"
 
 Description: mrRogerizer()
 
