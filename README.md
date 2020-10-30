@@ -60,10 +60,15 @@ code: array.splice(3, 1, "wont you be my neighbor");
 }
 expect: mrRogerizer(5) to output [0, 1, 2, "wont you be my neighbor", 4, 5]
 
-test: replace index[2] of array with "wont you be my neighbor
-code: array.splice(3, 1, "wont you be my neighbor");
+test: replace index[2] of array with "boop"
+code: array.splice(2, 1, "boop");
 }
-expect: mrRogerizer(5) to output [0, 1, 2, "wont you be my neighbor", 4, 5]
+expect: mrRogerizer(5) to output [0, 1, "boop", "wont you be my neighbor", 4, 5]
+
+test: replace index[1] of array with "beep"
+code: array.splice(1, 1, "beep");
+}
+expect: mrRogerizer(5) to output [0, "beep", "boop", "wont you be my neighbor", 4, 5]
 
 ## Known Bugs
 *  
