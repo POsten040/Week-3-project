@@ -34,6 +34,16 @@ function mrRogerizer(n) {
   let tenString = oneString.replace(/1\d/g, " beep ");
   return tenString;
 }
+
+const array = [0,3,7,13,23];
+let i = array.indexOf(3);
+
+array.forEach(function(el){
+  let element = array.indexOf(el);
+  if (el == 3) {
+      array.splice(element, 1, "wont you be my neighbor");
+  }
+});
   
 // NON FUNCTIONING ATTEMPTS
 // function stringMaker(n) {

@@ -79,6 +79,13 @@ for (let i = 0; i < n+1; i++) {
 **Expect**: input.replace(/\d3/g, "word") replaces "23" with word, but not "32".  
 <!-- I'm not happy about how this works -->
 
+**Test**: take array and get the index of instances of "3", and splice "wont you be my neighbor" into that spot.
+**Code**: if(array.includes(3)).Replace3with(newElement)
+**Expect**: input([1,2,3] returns [1,2,newElement]
+
+**Test**: use forEach to loop through whole array and replace "3"s
+**Code**: 
+**Expect**: input(1,2,3,4,5,3) returns (1,2,newElement,4,5,newElement)
 
 
 
