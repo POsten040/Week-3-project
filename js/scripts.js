@@ -39,6 +39,20 @@ array.forEach(function(el){
     }
   });
 
+  array.forEach(function(el){
+    let element = array.indexOf(el);
+    const regEx = /3+/g 
+    if (el == regEx) { // Why doesn't the if statement work with regular expressions?
+        array.splice(element, 1, "wont you be my neighbor");
+    }
+    else if (el == 2) {
+        array.splice(element, 1, "boop")
+      }
+    else if (el == 1) {
+        array.splice(element, 1, "beep")
+      }
+    });
+
 // another iteration below
 
 const string = "1,2,3,4,5,13,23,45,43";
