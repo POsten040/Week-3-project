@@ -87,6 +87,9 @@ for (let i = 0; i < n+1; i++) {
 **Code**: 
 **Expect**: input(1,2,3,4,5,3) returns (1,2,newElement,4,5,newElement)
 
+**Test**: change function of mrRogerizer to use regular expressions to find all instances of certain numbers
+**Expect**: input ("1,2,3,4,5,13,23,45,43") returns "beep,boop,wont you be my neighbor?,4,5,wont you be my neighbor?,wont you be my neighbor?,45,wont you be my neighbor?"
+
 
 
 ## Known Bugs
