@@ -2,7 +2,7 @@
 
 #### **This webpage takes user input and converts it to a friendly Mr. Rogers-esque response based on simple rules. Patrick Osten, 10/23/2020**
 
-**[Click here to open in web browser](https://posten040.github.io/week-2-project/index.html)**
+**[Click here to open in web browser](https://posten040.github.io/week-3-project/index.html)**
 
 ## Description
 
