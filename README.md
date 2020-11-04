@@ -2,11 +2,11 @@
 
 #### **This webpage takes user input and converts it to a friendly Mr. Rogers-esque response based on simple rules. Patrick Osten, 10/23/2020**
 
-**[Click here to open in web browser](https://posten040.github.io/week-3-project/index.html)**
+**[Click here to open github repository in web browser](https://github.com/POsten040/Week-3-project)**
 
 ## Description
 
-The program made primarily in Javascript and **Test**ed with TDD, takes a number as an input and returns a range of number from 0 to the input with the exceptions that 1, 2, and 3 are replaced with english phrases. For example 5, should return [0, beep, boop, "won't you be my neighbor?", 4, 5].
+The program made primarily in Javascript and tested with TDD, takes a number as an input and returns a range of number from 0 to the input with the exceptions that 1, 2, and 3 are replaced with english phrases. For example 5, should return [0, beep, boop, "won't you be my neighbor?", 4, 5].
 
 ## Installation Requirements
 
@@ -38,12 +38,6 @@ The program made primarily in Javascript and **Test**ed with TDD, takes a number
 
 Description: mrRogerizer()
 
-
-
-****Test****: Should accept user input and convert it to a number.  
-**Code**: let input = parseInt($("formInput").val());  
- **Expect**: user types "5", should return 5.
-
 **Test**: Should take input and return array of numbers 0 - input.  
 **Code**: let n = 5;
 const empty = []
@@ -66,31 +60,6 @@ for (let i = 0; i < n+1; i++) {
 **Test**: replace 1 with "beep"  
 **Code**: string.replace(/1/g, "beep"); 
 **Expect**: input [1,2,3,4] returns ["beep",2,3,4] 
-
-**Test**: create rule where, if numbers are grouped (ie: 13, 11, 24) replace both numbers with appropriate string.  
-**Code**: n/a  
-**Expect**: input [13] returns ["Wont you be my neighbor"]  
-
-**Test**: change regular expressions to single out 1, 2, 3 and change only them
-**Code**:
-**Expect**: input "1, 13, 3" returns "beep", 13, "wont you be my neighbor"
-
-**Test**: add many variables that each single out instances of 1, 2, 3 to be converted.  
-**Expect**: input.replace(/\d3/g, "word") replaces "23" with word, but not "32".  
-<!-- I'm not happy about how this works -->
-
-**Test**: take array and get the index of instances of "3", and splice "wont you be my neighbor" into that spot.
-**Code**: if(array.includes(3)).Replace3with(newElement)
-**Expect**: input([1,2,3] returns [1,2,newElement]
-
-**Test**: use forEach to loop through whole array and replace "3"s
-**Code**: 
-**Expect**: input(1,2,3,4,5,3) returns (1,2,newElement,4,5,newElement)
-
-**Test**: change function of mrRogerizer to use regular expressions to find all instances of certain numbers
-**Expect**: input ("1,2,3,4,5,13,23,45,43") returns "beep,boop,wont you be my neighbor?,4,5,wont you be my neighbor?,wont you be my neighbor?,45,wont you be my neighbor?"
-
-
 
 ## Known Bugs
 *  numbers with triple digits are not compatible with the function mrRogerizer, they return fractured numbers and phrases. ex: 101 return "1 beep", instead of "beep".
